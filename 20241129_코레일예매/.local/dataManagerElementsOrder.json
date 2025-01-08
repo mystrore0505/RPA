@@ -1,0 +1,59 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "01_코레일예매.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bReturnPopup&Sequence_1",
+        "bStartPopup&Sequence_1",
+        "bLogOutPopup&Sequence_1",
+        "bLogOut&Sequence_1",
+        "strID&Sequence_1",
+        "strSecurePW&Sequence_1",
+        "strPW&Sequence_1",
+        "strHour&Sequence_1",
+        "strAdult&Sequence_1",
+        "strDay&Sequence_1",
+        "strMonth&Sequence_1",
+        "strYear&Sequence_1",
+        "arrKillPrg&Sequence_1",
+        "strURL&Sequence_1",
+        "strStartStation&Sequence_1",
+        "strEndStation&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "02_부킹닷컴스크래핑.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ueAdult&Sequence_10",
+        "bMoreResult&Sequence_1",
+        "dtData&Sequence_1",
+        "strStartLoc&Sequence_1",
+        "bOutputPath&Sequence_1",
+        "Config&Sequence_1",
+        "dtSettings&Sequence_1",
+        "strSheetName&Sequence_1",
+        "strResultSheetName&Sequence_1",
+        "strResutFile&Sequence_1",
+        "nPage&Sequence_1",
+        "strConfigPath&Sequence_1",
+        "arrKillApp&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

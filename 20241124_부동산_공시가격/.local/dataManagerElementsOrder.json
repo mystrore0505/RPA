@@ -1,0 +1,86 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strInputFileName&Sequence_1",
+        "lstSheetName&Sequence_1",
+        "dtSettings&Sequence_1",
+        "dtData&Sequence_1",
+        "Config&Sequence_1",
+        "bOutputPath&Sequence_1",
+        "strResultSheetName&Sequence_1",
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "공시가_조회하기.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "in_Config&Sequence_2",
+        "idx&Sequence_1",
+        "strData&Sequence_1",
+        "strPrice&Sequence_1",
+        "dtSmall&Sequence_1",
+        "dtDangi&Sequence_1",
+        "dtHo&Sequence_1",
+        "arrDong&Sequence_1",
+        "dtDong&Sequence_1",
+        "arrDangi&Sequence_1",
+        "dtMedium&Sequence_1",
+        "dtLarge&Sequence_1",
+        "strBigGugun&Sequence_1",
+        "arrSido&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_dtData",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "20241115 과제/부동산.공시가격.1.0.1_이청아/content/Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "lstSheetsName&Sequence_1",
+        "dtData&Sequence_1",
+        "dtSetting&Sequence_1",
+        "uibrowser&Sequence_1",
+        "arrSido&Sequence_1",
+        "idx&Sequence_1",
+        "columnIdx&Sequence_1",
+        "strSidoName&Sequence_1",
+        "dtData1&Sequence_1",
+        "arrTemp&Sequence_1",
+        "arrSelector&Sequence_1",
+        "strSelector&Sequence_1",
+        "strName&Sequence_1",
+        "strSiga&Sequence_1",
+        "strVisible&Sequence_1",
+        "ntableRow&Sequence_1",
+        "bState&Sequence_1",
+        "strFolderPath&Sequence_1",
+        "arrProcessName&Sequence_1",
+        "URL&Sequence_1",
+        "strFileName&Sequence_1",
+        "bFolderExists&Sequence_50"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "부킹닷컴스크래핑.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bGooglPopup&Sequence_10",
+        "bPopup&Sequence_1",
+        "ueAdult&Sequence_1",
+        "strChild&Sequence_1",
+        "strAdult&Sequence_1",
+        "bMoreResult&Sequence_1",
+        "dtData&Sequence_1",
+        "strStartLoc&Sequence_1",
+        "bOutputPath&Sequence_1",
+        "Config&Sequence_1",
+        "dtSettings&Sequence_1",
+        "strSheetName&Sequence_1",
+        "strResultSheetName&Sequence_1",
+        "strResutFile&Sequence_1",
+        "nPage&Sequence_1",
+        "strConfigPath&Sequence_1",
+        "arrKillApp&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

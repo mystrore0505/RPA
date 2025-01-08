@@ -1,0 +1,746 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business.Filter</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Net</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1272,8221.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strURL" />
+      <Variable x:TypeArguments="x:String" Name="strStartStation" />
+      <Variable x:TypeArguments="x:String" Name="strEndStation" />
+      <Variable x:TypeArguments="x:String" Name="strYear" />
+      <Variable x:TypeArguments="s:String[]" Name="arrKillPrg" />
+      <Variable x:TypeArguments="x:String" Name="strMonth" />
+      <Variable x:TypeArguments="x:String" Name="strDay" />
+      <Variable x:TypeArguments="x:String" Name="strAdult" />
+      <Variable x:TypeArguments="x:String" Name="strHour" />
+      <Variable x:TypeArguments="x:String" Name="strPW" />
+      <Variable x:TypeArguments="ss:SecureString" Name="strSecurePW" />
+      <Variable x:TypeArguments="x:String" Name="strID" />
+      <Variable x:TypeArguments="x:Boolean" Name="bLogOut" />
+      <Variable x:TypeArguments="x:Boolean" Name="bLogOutPopup" />
+      <Variable x:TypeArguments="x:Boolean" Name="bStartPopup" />
+      <Variable x:TypeArguments="x:Boolean" Name="bReturnPopup" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetPassword DisplayName="Get Password_ID" sap:VirtualizedContainerService.HintSize="586,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetPassword_2" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtT+klXZjQUyoWjcRflABdgAAAAACAAAAAAAQZgAAAAEAACAAAACi+IzmXDuT22nu0JOYUIKdT//4rdozbg2zA+DiNyGR7gAAAAAOgAAAAAIAACAAAADhkDsMUsbinpLHPeC8178nYRd7o9kCHs6H9tkb04uFZxAAAAB/OzKmQxkws6eJ4olWI17UQAAAAIwT8LHzVxI2PTpTN4ywyYDiTHKwJn0zZJJoReih9KC+f40N7UwtIX8yzvmYvRzQvAQzA0ocVB+wNTvcImK1HRc=" Result="[strID]" />
+    <ui:GetPassword DisplayName="Get Password_PW" sap:VirtualizedContainerService.HintSize="586,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAH9GBlb54Q0WtAKRpM81dwgAAAAACAAAAAAAQZgAAAAEAACAAAAC2djDOXdovLzGoxNJvLMJYU+/h7j/UHO1MBJn/43zDwgAAAAAOgAAAAAIAACAAAACxXHcLKrTOqmZvahlSEdpuThSwV7thSJQXuiyaa1d3pRAAAAAl9Okb+uizcXwHo+T2WaItQAAAAGuajZ1rrjP04o526E6wUiXUg/kz9Hh4C2gkHKW2oJYoMHHFA4v/D9VfVgSYIrj+e7gpOFd5bfDaiSQjm0Br1Ls=" Result="[strPW]" />
+    <ui:MultipleAssign sap2010:Annotation.AnnotationText="1.로그아웃 버튼을 체크하는 시점의 타이틀로 작성&#xA;2.액티비티는 타이틀이 맞아야 정상작동함&#xA;3.그래도 안되면 클랙식써&#xA;4.버튼이 테이블형태로 있을때 ID 네이밍 패턴을 찾아 옆으로 밑으로 보면서" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="586,504" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strURL]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">https://www.letskorail.com/</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strStartStation]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">서울</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strEndStation]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">부산</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="s:String[]">[arrKillPrg]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="s:String[]">[{"chrome","edge","excel"}]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strAdult]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">어른 1명</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strMonth]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">12</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strDay]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">26</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strHour]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">18 (오후06)</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="ss:SecureString">[strSecurePW]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="ss:SecureString">[(New System.Net.NetworkCredential("", strPW)).SecurePassword]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[strYear]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">2024</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MultipleAssign>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="586,419.3333333333333" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arrKillPrg]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="416,219.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="382,159.33333333333334" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="[currentText]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome:코레일" sap:VirtualizedContainerService.HintSize="586,7160.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="552,6918.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay DisplayName=" Delay 3 seconds" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="518,124" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;11:&quot; + now.ToString(&quot;yyyyMMdd HH:mm:ss&quot;)]" />
+            <ui:UiElementExists DisplayName="Element Exists_로그아웃" Exists="[bLogOut]" sap:VirtualizedContainerService.HintSize="518,139.33333333333334" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ce4c5313-9e3c-494e-a2ac-861e9ec7d67d" InformativeScreenshot="91900b07260b20f3ae32b31b1ba48854" Selector="&lt;webctrl aaname='로그아웃' tag='IMG' /&gt;" TimeoutMS="5000">
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+            <If Condition="[bLogOut]" sap:VirtualizedContainerService.HintSize="518,2016" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,1818.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;22:&quot; + now.ToString(&quot;yyyyMMdd HH:mm:ss&quot;)]" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 로그아웃" sap:VirtualizedContainerService.HintSize="450,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="letskorail.com/index.jsp" CVScreenId="48459f5b-eff0-4c3f-b475-46ccabfb5dba" DesignTimeRectangle="725, 133, 59, 22" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='로그아웃' tag='IMG' alt='로그아웃' /&gt;" Guid="267a0f0b-fa30-4ac9-b9b1-6425761be79e" InformativeScreenshot="ee55f4f2b05347b1cf108b4898e9b369.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='레츠코레일-LetsKorail' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;33:&quot; + now.ToString(&quot;yyyyMMdd HH:mm:ss&quot;)]" />
+                  <ui:UiElementExists DisplayName="Element Exists_로그아웃 할래?" Exists="[bLogOutPopup]" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="921bad0f-c6f5-45d5-9a7e-f02a6616b135" InformativeScreenshot="e1887debf934a1cd685da1bca7f26114" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='레츠코레일-LetsKorail - Chrome' /&gt;&lt;ctrl name='www.letskorail.com 내용:' role='dialog' /&gt;&lt;ctrl idx='2' role='pane' /&gt;" TimeoutMS="5000">
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                  <If Condition="[bLogOutPopup]" sap:VirtualizedContainerService.HintSize="450,1031.3333333333333" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,638.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;44:&quot; +now.ToString(&quot;yyyyMMdd HH:mm:ss&quot;) + &quot; : 로그아웃 팝업존재&quot;]" />
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '확인'" sap:VirtualizedContainerService.HintSize="382,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="letskorail.com" CVScreenId="f9fc90b1-bba5-4ce1-bed6-3f526a706627" DesignTimeRectangle="1036, 179, 64, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='www.letskorail.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' /&gt;" Guid="a6cd7b65-b1e9-4a5a-ae79-0f66e57c6c1e" InformativeScreenshot="bf34ef9a46cec72417a6e11332b24e8f.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='레츠코레일-LetsKorail - Chrome' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,170" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;55:&quot; +now.ToString(&quot;yyyyMMdd HH:mm:ss&quot;)]" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,230" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,170" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;로그아웃 팝업없음&quot;]" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <Delay DisplayName=" Delay 3 seconds" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="518,124" sap2010:WorkflowViewState.IdRef="Delay_3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 로그인" sap:VirtualizedContainerService.HintSize="518,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do" CVScreenId="2f0f0b98-5109-48cb-9cc6-1119d0b37e52" DesignTimeRectangle="743, 133, 41, 21" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='로그인' tag='IMG' /&gt;" Guid="45ace73d-b128-4d65-bb2f-f55edac68111" InformativeScreenshot="65d568c259b03428a44eed1f880f1e11.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into_아이디" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="518,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Text="[strID]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/korail/com/login.do" CVScreenId="dab4ce54-9eff-4ee5-a17f-4d968d741759" DesignTimeRectangle="888, 563, 190, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='txtMember' tag='INPUT' /&gt;" Guid="51aafa65-ca6c-4630-8100-ff1a6cca4bf7" InformativeScreenshot="7f218816fc14b6441b54c5d3bc2e477d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='로그인' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="dab4ce54-9eff-4ee5-a17f-4d968d741759" CvTextArea="868, 513, 112, 16" CvTextArgument="O0|02 00|c ę29" CvType="Text" DesignTimeRectangle="865, 514, 116, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='이메일 아이디 로그인' parentid='contents' tag='LABEL' type='' class='mem_email in_block mg_rig30' check:innerText='이메일 아이디 로그인' /&gt;" Guid="2646ffec-c564-4080-b132-90dfdffa639c" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <ui:TypeSecureText AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Secure Text_비밀번호" EmptyField="True" sap:VirtualizedContainerService.HintSize="518,139.33333333333334" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[strSecurePW]">
+              <ui:TypeSecureText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4389fd8e-2710-4f84-aefa-d3f0fe631b9b" InformativeScreenshot="0b00aee104d82b053584c850b2eff559" Selector="&lt;webctrl id='txtPwd' tag='INPUT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeSecureText.Target>
+            </ui:TypeSecureText>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 확인" sap:VirtualizedContainerService.HintSize="518,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/korail/com/login.do" CVScreenId="ff5209fb-8bd3-4688-a1ae-ecea3f2db224" DesignTimeRectangle="1089, 465, 84, 51" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='loginDisplay1' tag='IMG' /&gt;" Guid="393368a1-b60b-473a-82cb-d886f37f3166" InformativeScreenshot="009a334e4c48110866defee7ce89aa69.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='로그인' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <Delay DisplayName=" Delay 3 seconds" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="518,124" sap2010:WorkflowViewState.IdRef="Delay_4" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 승차권" sap:VirtualizedContainerService.HintSize="518,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do" CVScreenId="71b0d374-cdd7-4384-bd9c-eef95946d02f" DesignTimeRectangle="443, 229, 43, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='승차권' tag='IMG' /&gt;" Guid="38c1f605-1e09-47ef-8a3d-dc0c9e8016c5" InformativeScreenshot="87af2fa8f85fb60a9269473c67c5d884.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NSelectItem DisplayName="Select Item '어른 1명'" sap:VirtualizedContainerService.HintSize="518,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[strAdult]" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="10">
+                  <x:String>어른 0명</x:String>
+                  <x:String>어른 1명</x:String>
+                  <x:String>어른 2명</x:String>
+                  <x:String>어른 3명</x:String>
+                  <x:String>어른 4명</x:String>
+                  <x:String>어른 5명</x:String>
+                  <x:String>어른 6명</x:String>
+                  <x:String>어른 7명</x:String>
+                  <x:String>어른 8명</x:String>
+                  <x:String>어른 9명</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do" CVScreenId="ec26f6d4-8619-4ac7-a972-09b428573aa0" DesignTimeRectangle="684, 588, 110, 23" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='peop01' tag='SELECT' /&gt;" Guid="d321a3bd-8de2-41a2-aceb-1252adc7f130" ImageBase64="" InformativeScreenshot="ef082becb7f33d5061175a77afd50ff6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 조회" sap:VirtualizedContainerService.HintSize="518,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do" CVScreenId="61a682e1-4ce6-49fc-8351-25366eade3fd" DesignTimeRectangle="1242, 668, 49, 24" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='center' parentname='form1' tag='IMG' /&gt;" Guid="7922eeb5-c59a-4d7e-8512-12d80ea55c9c" InformativeScreenshot="ef2303078ab36aec55853390d3205ef3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="518,124" sap2010:WorkflowViewState.IdRef="Delay_5" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '서울'" sap:VirtualizedContainerService.HintSize="518,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do" CVScreenId="c96fceb2-eac8-40cd-88bd-93e041ed9986" DesignTimeRectangle="35, 168, 114, 28" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='popWin1' title='역명조회' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' aaname='서울    ' /&gt;" Guid="3c763442-9e11-4222-aee8-e7ea2f68251d" InformativeScreenshot="bdf07738a20aed524ee7252f8d61f8a4.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='역명조회 - Chrome' /&gt;" SearchSteps="Selector" SelectionStrategy="AA" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="518,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="416,343.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '출발역'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,283.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Text="[strStartStation]" Version="V4">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do" CVScreenId="f0595ec8-f322-4c6a-8e9b-b575d6e1bb75" DesignTimeRectangle="1087, 668, 150, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='start' tag='INPUT' /&gt;" Guid="581fbccd-21c8-471a-b17f-28a62144638c" InformativeScreenshot="518fdd230fd868fa09dddb0bbcbd7f7d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="f0595ec8-f322-4c6a-8e9b-b575d6e1bb75" CvTextArea="1027, 674, 38, 14" CvTextArgument="se9" CvType="Text" DesignTimeRectangle="1027, 676, 39, 12" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='출발역' parentid='center' tag='LABEL' type='' class='' check:innerText='출발역' /&gt;" Guid="b658e827-c3a1-4b05-aae7-2f1d408d50c3" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '도착역'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="518,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Text="[strEndStation]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do" CVScreenId="f0595ec8-f322-4c6a-8e9b-b575d6e1bb75" DesignTimeRectangle="1087, 696, 150, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='get' tag='INPUT' /&gt;" Guid="99078651-524e-40a7-bf6c-2a75032400f8" InformativeScreenshot="017c876b6df650d5d7eda51c594b27fc.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f0595ec8-f322-4c6a-8e9b-b575d6e1bb75" CvTextArea="1026, 702, 39, 14" CvTextArgument="52t9" CvType="Text" DesignTimeRectangle="1027, 704, 39, 12" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='도착역' parentid='center' tag='LABEL' type='' class='' check:innerText='도착역' /&gt;" Guid="affe0cad-4565-4a10-bf38-a135849ffb7e" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NSelectItem DisplayName="Select Item YYYY" sap:VirtualizedContainerService.HintSize="518,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[strYear]" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String>2024</x:String>
+                  <x:String>2025</x:String>
+                  <x:String>2026</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do#" CVScreenId="aad37eed-2518-4adf-9d52-8ae9ed6ffa63" DesignTimeRectangle="1087, 730, 48, 23" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='s_year' tag='SELECT' /&gt;" Guid="f78ad51f-56a6-45fc-a70a-6ceb430c1bee" ImageBase64="" InformativeScreenshot="e0556885316e42346df94d7527de92ed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item MM" sap:VirtualizedContainerService.HintSize="518,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[strMonth]" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="12">
+                  <x:String>1</x:String>
+                  <x:String>2</x:String>
+                  <x:String>3</x:String>
+                  <x:String>4</x:String>
+                  <x:String>5</x:String>
+                  <x:String>6</x:String>
+                  <x:String>7</x:String>
+                  <x:String>8</x:String>
+                  <x:String>9</x:String>
+                  <x:String>10</x:String>
+                  <x:String>11</x:String>
+                  <x:String>12</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do#" CVScreenId="ac0f0879-16fb-4791-b04f-68c07f2f45a9" DesignTimeRectangle="1151, 730, 40, 23" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='s_month' tag='SELECT' /&gt;" Guid="8560d2f4-4e99-4ab9-b0da-4a26a4fafa10" ImageBase64="" InformativeScreenshot="c7112118364286e96a86418aae8c61a8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item DD" sap:VirtualizedContainerService.HintSize="518,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="[strDay]" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="30">
+                  <x:String>1</x:String>
+                  <x:String>2</x:String>
+                  <x:String>3</x:String>
+                  <x:String>4</x:String>
+                  <x:String>5</x:String>
+                  <x:String>6</x:String>
+                  <x:String>7</x:String>
+                  <x:String>8</x:String>
+                  <x:String>9</x:String>
+                  <x:String>10</x:String>
+                  <x:String>11</x:String>
+                  <x:String>12</x:String>
+                  <x:String>13</x:String>
+                  <x:String>14</x:String>
+                  <x:String>15</x:String>
+                  <x:String>16</x:String>
+                  <x:String>17</x:String>
+                  <x:String>18</x:String>
+                  <x:String>19</x:String>
+                  <x:String>20</x:String>
+                  <x:String>21</x:String>
+                  <x:String>22</x:String>
+                  <x:String>23</x:String>
+                  <x:String>24</x:String>
+                  <x:String>25</x:String>
+                  <x:String>26</x:String>
+                  <x:String>27</x:String>
+                  <x:String>28</x:String>
+                  <x:String>29</x:String>
+                  <x:String>30</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do#" CVScreenId="aad37eed-2518-4adf-9d52-8ae9ed6ffa63" DesignTimeRectangle="1207, 730, 40, 23" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='s_day' tag='SELECT' /&gt;" Guid="7b15903b-1779-4cad-bdef-f3afc8a1a9ae" ImageBase64="" InformativeScreenshot="1fd9565dc16a97f6d11c334f08a3c4bf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item HH" sap:VirtualizedContainerService.HintSize="518,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="[strHour]" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="24">
+                  <x:String>0 (오전00)</x:String>
+                  <x:String>1 (오전01)</x:String>
+                  <x:String>2 (오전02)</x:String>
+                  <x:String>3 (오전03)</x:String>
+                  <x:String>4 (오전04)</x:String>
+                  <x:String>5 (오전05)</x:String>
+                  <x:String>6 (오전06)</x:String>
+                  <x:String>7 (오전07)</x:String>
+                  <x:String>8 (오전08)</x:String>
+                  <x:String>9 (오전09)</x:String>
+                  <x:String>10 (오전10)</x:String>
+                  <x:String>11 (오전11)</x:String>
+                  <x:String>12 (오후00)</x:String>
+                  <x:String>13 (오후01)</x:String>
+                  <x:String>14 (오후02)</x:String>
+                  <x:String>15 (오후03)</x:String>
+                  <x:String>16 (오후04)</x:String>
+                  <x:String>17 (오후05)</x:String>
+                  <x:String>18 (오후06)</x:String>
+                  <x:String>19 (오후07)</x:String>
+                  <x:String>20 (오후08)</x:String>
+                  <x:String>21 (오후09)</x:String>
+                  <x:String>22 (오후10)</x:String>
+                  <x:String>23 (오후11)</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do#" CVScreenId="ac0f0879-16fb-4791-b04f-68c07f2f45a9" DesignTimeRectangle="1263, 730, 86, 23" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='s_hour' tag='SELECT' /&gt;" Guid="07c65855-16b9-48e1-8f2c-55c377d4ff13" ImageBase64="" InformativeScreenshot="9decc2629a4f9231dcf8674e26b2be68.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 조회하기" sap:VirtualizedContainerService.HintSize="518,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/ebizprd/EbizPrdTicketpr21100W_pr21110.do#" CVScreenId="1e8de24d-e11d-4e83-84d3-610222b6ae5d" DesignTimeRectangle="1288, 841, 175, 38" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='조회하기' parentid='center' parentname='form1' tag='IMG' /&gt;" Guid="b3636768-d48f-4c86-8eee-3a24e0d0f8e6" InformativeScreenshot="8b12240faed5354160072532074b4159.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click_예매" sap:VirtualizedContainerService.HintSize="518,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.letskorail.com/ebizprd/EbizPrdTicketPr21111_i1.do" CVScreenId="b7174170-0942-4a7c-8672-63c9290d0be3" DesignTimeRectangle="876, 795, 45, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='tableResult' tag='TABLE' /&gt;&lt;webctrl tableRow='11' tag='IMG' /&gt;" Guid="841e921d-9b91-4e03-835b-fce7b231eb1f" InformativeScreenshot="1dae2c077474d5d84ff285fe29f44c95.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반승차권(직통)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '예매확인'" sap:VirtualizedContainerService.HintSize="518,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="letskorail.com/ebizprd/EbizPrdTicketPr12111_i1.do" CVScreenId="7c8c6c5a-bdc3-4512-9c59-75e6d4b7c240" DesignTimeRectangle="1108, 179, 64, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='www.letskorail.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' /&gt;" Guid="05d7cc93-94e6-4714-bba9-58bacde857e5" InformativeScreenshot="b5c9c4f377e04472e02b001770071792.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='*예약*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '확인'" sap:VirtualizedContainerService.HintSize="518,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="letskorail.com/ebizprd/EbizPrdTicketPr12111_i1.do" CVScreenId="c9896988-f159-427d-941a-8a20e6439f22" DesignTimeRectangle="1108, 351, 64, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='www.letskorail.com 내용:' role='dialog' /&gt;&lt;ctrl name='확인' role='push button' /&gt;" Guid="0723f60a-644f-45ce-bef2-a1fef5e270b7" InformativeScreenshot="bbc37e3a1d2969ac78e326b6b0c175d9.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='*예약*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '예약취소'" sap:VirtualizedContainerService.HintSize="518,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ec6334b-417a-4c23-bf20-54e312f2b021" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="letskorail.com/ebizprd/EbizPrdTicketPr12111_i1.do" CVScreenId="c8f1c0d4-328b-4be5-ac64-206a7b7e9b48" DesignTimeRectangle="1385, 834, 76, 30" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl class='btn_gray_ang' id='btn_next' tag='A' aaname='예약취소' /&gt;" Guid="5d72c090-ae10-4583-992a-04269ae5d37f" InformativeScreenshot="b687c4c2331abcd7dedd81f532cfca4e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='예약' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1120, -1088, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACBSURBVDhPYxgFgw6ENboz5M8uYeg5+R8qQgRI2/wfiO8xmMWzQkUYGBZcNWBImOoAlgMBiBoIhvAfwNkoEu3H/jPMu/KfYdLZ/wzFu0DiGXC5tM2fwWzbLC8Gz0ZduDiQUQOnPSpcGCr2QTTDxCC0B5T2AuIiKLsGLj8KBhQwMAAAhRpDtgd3LWcAAAAASUVORK5CYII=" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="94a57d0acc8d6b34654832091f3da16f.jpg" Selector="&lt;html app='chrome.exe' title='레츠코레일-LetsKorail' /&gt;" Title="레츠코레일-LetsKorail" Url="[strURL]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
