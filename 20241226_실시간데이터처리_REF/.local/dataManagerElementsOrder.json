@@ -36,18 +36,14 @@
       "Path": "Framework/Process.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "dtSecond&Sequence_1",
+        "dtFirst&Sequence_1",
         "strQuotaAmt&Sequence_1",
         "strUsedAmt&Sequence_1",
         "strHHMM&Sequence_1",
         "dtResult&Sequence_1",
-        "dtDataAft&Sequence_1",
         "nCount&Sequence_1",
-        "dtData&Sequence_1",
         "strGetTime&Sequence_1",
-        "bLoginPopup&Sequence_1",
-        "bPopup&Sequence_1",
-        "bLogin&Sequence_1",
-        "strPassWord&Sequence_1",
         "strUserName&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
@@ -71,6 +67,9 @@
       "Path": "Framework/InitAllApplications.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "bLogout&Sequence_9",
+        "bLogin&Sequence_9",
+        "strPassword&Sequence_9",
         "in_Config&Sequence_10"
       ],
       "ArgumentsSectionElementsOrder": [
@@ -140,16 +139,6 @@
         "io_TransactionNumber",
         "io_ConsecutiveSystemExceptions"
       ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "시퀀스.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "strGetText&Sequence_2"
-      ],
-      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }

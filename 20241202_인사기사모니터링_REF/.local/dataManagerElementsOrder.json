@@ -12,8 +12,6 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strProjectName&StateMachine_1",
-        "strOutputFileName&StateMachine_1",
         "TransactionItem&StateMachine_1",
         "SystemException&StateMachine_1",
         "BusinessException&StateMachine_1",
@@ -26,6 +24,8 @@
         "dt_TransactionData&StateMachine_1",
         "ConsecutiveSystemExceptions&StateMachine_1",
         "ieQueueItem&StateMachine_1",
+        "strProjectName&StateMachine_1",
+        "strOutputFileName&StateMachine_1",
         "ShouldStop&Sequence_25"
       ],
       "ArgumentsSectionElementsOrder": [
@@ -107,13 +107,6 @@
       "Path": "Framework/Process.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strHani&Sequence_1",
-        "strNewsis&Sequence_1",
-        "dtData&Sequence_1",
-        "strYna&Sequence_1",
-        "nPage&Sequence_1",
-        "bNextButton&Sequence_1",
-        "bPageButton&Sequence_1",
         "strBusinessExceptionMessage&Sequence_40"
       ],
       "ArgumentsSectionElementsOrder": [
@@ -202,12 +195,17 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "시퀀스.xaml",
+      "Path": "YnaProcess.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strText&Sequence_1"
+        "dtData&Sequence_1",
+        "bPageButton&Sequence_1",
+        "bNextButton&Sequence_1",
+        "nPage&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -223,6 +221,36 @@
         "in_ConfigFile",
         "in_ConfigSheets",
         "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "HaniProcess.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bPageButton&Sequence_1",
+        "bNextButton&Sequence_1",
+        "nPage&Sequence_1",
+        "dtData&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "NewsisProcess.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bPageButton&Sequence_1",
+        "bNextButton&Sequence_1",
+        "nPage&Sequence_1",
+        "dtData&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

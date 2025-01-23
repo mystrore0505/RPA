@@ -51,12 +51,8 @@
     {
       "Path": "Framework/KillAllProcesses.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "arrKillProcess&Sequence_2"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "in_Config"
-      ],
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -136,8 +132,22 @@
     {
       "Path": "Framework/CloseAllApplications.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "bExist&Sequence_2"
+      ],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "CreateFolder.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bOutputPath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
