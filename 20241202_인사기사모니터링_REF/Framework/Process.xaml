@@ -133,29 +133,29 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="975.9999999999999,2414.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1272,2401.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_62">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="574.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="574.6666666666666,205.33333333333334" sap2010:WorkflowViewState.IdRef="Comment_1" Text="1) 연합뉴스, 한겨레, 뉴시스의 인사메뉴에 접근하여 데이터 취합&#xD;&#xA;&#xD;&#xA;2) 작성날짜는 Config 파일에서 날짜포맷을 읽어와서 세팅 &#xD;&#xA;&#xD;&#xA;3) 결과를 엑셀에 저장" />
-    <TryCatch sap2010:Annotation.AnnotationText="" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="574.6666666666666,1931.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="520,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="520,205.33333333333334" sap2010:WorkflowViewState.IdRef="Comment_1" Text="1) 연합뉴스, 한겨레, 뉴시스의 인사메뉴에 접근하여 데이터 취합&#xA;&#xA;2) 작성날짜는 Config 파일에서 날짜포맷을 읽어와서 세팅 &#xA;&#xA;3) 결과를 엑셀에 저장" />
+    <TryCatch sap2010:Annotation.AnnotationText="" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="520,1918" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="536,1638.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_50">
+        <Sequence DisplayName="시도" sap:VirtualizedContainerService.HintSize="518,1606.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_50">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <If Condition="[String.IsNullOrWhiteSpace(in_Config(&quot;키워드&quot;).ToString)]" DisplayName="If_키워드(시트명)이 있는지 체크" sap:VirtualizedContainerService.HintSize="502,489.3333333333333" sap2010:WorkflowViewState.IdRef="If_14">
+          <If Condition="[String.IsNullOrWhiteSpace(in_Config(&quot;키워드&quot;).ToString)]" DisplayName="If_키워드(시트명)이 있는지 체크" sap:VirtualizedContainerService.HintSize="484,457.3333333333333" sap2010:WorkflowViewState.IdRef="If_14">
             <If.Then>
               <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,292" sap2010:WorkflowViewState.IdRef="Sequence_40">
                 <Sequence.Variables>
@@ -178,7 +178,7 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_41">
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_41">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -188,31 +188,31 @@
               </Sequence>
             </If.Else>
           </If>
-          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  연합뉴스'" sap:VirtualizedContainerService.HintSize="502,1089.3333333333333" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="6b59b886fc60a4636d05ae0bc7de3e56" Selector="&lt;html app='chrome.exe' title='*' /&gt;">
+          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  연합뉴스'" sap:VirtualizedContainerService.HintSize="484,1089.3333333333333" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="6b59b886fc60a4636d05ae0bc7de3e56" Selector="&lt;html app='chrome.exe' title='*' /&gt;">
             <ui:BrowserScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="416,919.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,919.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_61">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="YnaProcess - 연합뉴스" sap:VirtualizedContainerService.HintSize="382,210" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="YnaProcess.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="YnaProcess - 연합뉴스" sap:VirtualizedContainerService.HintSize="416,210" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="YnaProcess.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="382,119.33333333333333" sap2010:WorkflowViewState.IdRef="NavigateTo_11" Url="[in_Config(&quot;한겨레&quot;).ToString]" />
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HaniProcess - 한겨레" sap:VirtualizedContainerService.HintSize="382,210" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="HaniProcess.xaml">
+                  <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="416,119.33333333333333" sap2010:WorkflowViewState.IdRef="NavigateTo_16" Url="[in_Config(&quot;한겨레&quot;).ToString]" />
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HaniProcess - 한겨레" sap:VirtualizedContainerService.HintSize="416,210" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="HaniProcess.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="382,119.33333333333333" sap2010:WorkflowViewState.IdRef="NavigateTo_10" Url="[in_Config(&quot;뉴시스&quot;).ToString]" />
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NewsisProcess - 뉴시스" sap:VirtualizedContainerService.HintSize="382,200.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="NewsisProcess.xaml">
+                  <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="416,119.33333333333333" sap2010:WorkflowViewState.IdRef="NavigateTo_15" Url="[in_Config(&quot;뉴시스&quot;).ToString]" />
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="NewsisProcess - 뉴시스" sap:VirtualizedContainerService.HintSize="416,200.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="NewsisProcess.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
@@ -235,10 +235,19 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
             </ActivityAction.Argument>
-            <Rethrow sap:VirtualizedContainerService.HintSize="334,25.333333333333332" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+            <Rethrow sap:VirtualizedContainerService.HintSize="518,25.333333333333332" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence DisplayName="마지막" sap:VirtualizedContainerService.HintSize="518,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </TryCatch.Finally>
     </TryCatch>
   </Sequence>
 </Activity>
