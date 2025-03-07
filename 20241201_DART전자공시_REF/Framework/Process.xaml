@@ -142,7 +142,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="975.9999999999999,3926" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1272,4462.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_14">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dtFileNames" />
       <Variable x:TypeArguments="x:String" Name="strExceptionMessgae" />
@@ -156,32 +156,32 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="710.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="710.6666666666666,166" sap2010:WorkflowViewState.IdRef="Comment_1" Text="1) 상세화면으로 접속후 다운로드 작업 진행&#xD;&#xA;&#xD;&#xA;2) PDF 파일이 있으면 다운로드하고 없으면 운영자에게 이메일 전송" />
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser_상세화면으로 이동" sap:VirtualizedContainerService.HintSize="710.6666666666666,3482" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="d6e11aa3cb3f266fb3ecdfcbf891af50" Selector="&lt;html app='chrome.exe' title='*' /&gt;">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="642,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="642,166" sap2010:WorkflowViewState.IdRef="Comment_1" Text="1) 상세화면으로 접속후 다운로드 작업 진행&#xA;&#xA;2) PDF 파일이 있으면 다운로드하고 없으면 운영자에게 이메일 전송" />
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser_상세화면으로 이동" sap:VirtualizedContainerService.HintSize="642,4018.6666666666665" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="d6e11aa3cb3f266fb3ecdfcbf891af50" Selector="&lt;html app='chrome.exe' title='*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="676.6666666666666,3312" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="608,3848.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="642.6666666666666,3252" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="574,3788.6666666666665" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <TryCatch.Try>
-                <Sequence sap:VirtualizedContainerService.HintSize="604,2990" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <Sequence DisplayName="시도" sap:VirtualizedContainerService.HintSize="572,3066" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To_다운로드를 위한 상세화면이동" sap:VirtualizedContainerService.HintSize="570,119.33333333333333" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="[in_TransactionItem(&quot;제목URL&quot;).ToString]" />
-                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="570,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
-                  <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="570,124" sap2010:WorkflowViewState.IdRef="Delay_2" />
-                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_다운로드 버튼" sap:VirtualizedContainerService.HintSize="570,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To_다운로드를 위한 상세화면이동" sap:VirtualizedContainerService.HintSize="538,119.33333333333333" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="[in_TransactionItem(&quot;제목URL&quot;).ToString]" />
+                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="538,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
+                  <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="538,124" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_다운로드 버튼" sap:VirtualizedContainerService.HintSize="538,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -203,24 +203,24 @@
                       </ui:Target>
                     </ui:Click.Target>
                   </ui:Click>
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Download" sap:VirtualizedContainerService.HintSize="570,2490" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ff6ef162-9712-424f-ac04-79f136884e7d" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Download" sap:VirtualizedContainerService.HintSize="538,2566" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ff6ef162-9712-424f-ac04-79f136884e7d" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="536,2248" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="504,2324" sap2010:WorkflowViewState.IdRef="Sequence_9">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtFileNames]" DisplayName="파일리스트 취합" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='파일명'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="502,192" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="ff6ef162-9712-424f-ac04-79f136884e7d" Version="V4">
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtFileNames]" DisplayName="파일리스트 취합" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='파일명'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="470,192" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="ff6ef162-9712-424f-ac04-79f136884e7d" Version="V4">
                             <uix:NExtractData.Target>
                               <uix:TargetAnchorable BrowserURL="https://dart.fss.or.kr/pdf/download/main.do?rcp_no=20241114000212&amp;dcm_no=10180044" DesignTimeRectangle="23, 233, 507, 69" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="62413341-b8cf-401e-a113-7434806db902" InformativeScreenshot="def9e7121d72cc81fcc07fdd18f5133e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='DOWNLOAD' title='Download' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NExtractData.Target>
                           </uix:NExtractData>
-                          <If Condition="[Not dtFileNames.AsEnumerable.Any(function(r) r(&quot;파일명&quot;).ToString.Contains(&quot;pdf&quot;))]" DisplayName="If_PDF 파일이 있는지" sap:VirtualizedContainerService.HintSize="502,628.6666666666666" sap2010:WorkflowViewState.IdRef="If_2">
+                          <If Condition="[Not dtFileNames.AsEnumerable.Any(function(r) r(&quot;파일명&quot;).ToString.Contains(&quot;pdf&quot;))]" DisplayName="If_PDF 파일이 있는지" sap:VirtualizedContainerService.HintSize="470,596.6666666666666" sap2010:WorkflowViewState.IdRef="If_2">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -246,7 +246,7 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8121d78-def9-4840-9844-9e470fbdd9b3" InformativeScreenshot="161a2dd02563ee9c50231ffa19a939a5" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Download - Chrome' /&gt;&lt;ctrl name='Download - Chrome - 푸르게' role='pane' /&gt;&lt;ctrl name='닫기' role='push button' /&gt;">
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8121d78-def9-4840-9844-9e470fbdd9b3" InformativeScreenshot="161a2dd02563ee9c50231ffa19a939a5" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Download - Chrome' /&gt;&lt;ctrl name='Download*' role='pane' /&gt;&lt;ctrl name='닫기' role='push button' /&gt;">
                                       <ui:Target.TimeoutMS>
                                         <InArgument x:TypeArguments="x:Int32" />
                                       </ui:Target.TimeoutMS>
@@ -268,7 +268,7 @@
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -278,7 +278,7 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <Assign DisplayName="Assign_PDF만 추출" sap:VirtualizedContainerService.HintSize="502,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign DisplayName="Assign_PDF만 추출" sap:VirtualizedContainerService.HintSize="470,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
                             <Assign.To>
                               <OutArgument x:TypeArguments="sd:DataTable">[dtFileNames]</OutArgument>
                             </Assign.To>
@@ -292,13 +292,13 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </Assign>
-                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[idx]" DataTable="[dtFileNames]" DisplayName="추출한 PDF 파일명리스트를 통해 다운로드 진행" sap:VirtualizedContainerService.HintSize="502,1247.3333333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[idx]" DataTable="[dtFileNames]" DisplayName="추출한 PDF 파일명리스트를 통해 다운로드 진행" sap:VirtualizedContainerService.HintSize="470,1355.3333333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                             <ui:ForEachRow.Body>
                               <ActivityAction x:TypeArguments="sd:DataRow">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="468,1054" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="468,1178" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -383,6 +383,7 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
+                                  <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="Delay_3" />
                                   <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_취소" sap:VirtualizedContainerService.HintSize="434,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
@@ -417,7 +418,7 @@
                                       </ui:CursorPosition>
                                     </ui:Click.CursorPosition>
                                     <ui:Click.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="08281f92-afbd-4b86-8667-6ffab665c2db" InformativeScreenshot="07f7f6932d50edf654b7c15814b26cbc" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='pdf.do.pdf - Chrome' /&gt;&lt;ctrl name='pdf.do.pdf - Chrome - 푸르게' role='pane' /&gt;&lt;ctrl name='닫기' role='push button' /&gt;">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="08281f92-afbd-4b86-8667-6ffab665c2db" InformativeScreenshot="07f7f6932d50edf654b7c15814b26cbc" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='pdf.do.pdf - Chrome' /&gt;&lt;ctrl name='pdf.do.pdf*' role='pane' /&gt;&lt;ctrl name='닫기' role='push button' /&gt;">
                                         <ui:Target.TimeoutMS>
                                           <InArgument x:TypeArguments="x:Int32" />
                                         </ui:Target.TimeoutMS>
@@ -441,7 +442,7 @@
                       </ActivityAction>
                     </uix:NApplicationCard.Body>
                     <uix:NApplicationCard.TargetApp>
-                      <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGpSURBVDhPfdJPKERRFMfxiffCiLKwYIWUkklqCCWU8m9hhYWU2NrYSJLQGJSJDUVskPzLCmGIYihko0RRNhYWrCz8K75nOvPnmTj1ad5793fue3Pvtf0us2+7AJk4RQcmcIdSODQWWQzGI1XDTdhCjd6PohPfWEGStoWKh3PYQAmaUQgnulEMaX7EPFoRmoSbOlShF/mG2xvrf96/E8d9IsbQgmrM4B3z/mbDc5hmDO294tIY3i8z3HvR/gEtJjEJZ8CDT8iXBJTb4ismU+x1M0577XSuvWYqK8ExEqO9wSKYDlmPRsjCymSrcq2R/4tgNhZxhhNc4AaHGvm7zIGdZIL1kMVdQvhfeNFYZJkub4bp2s0nJDshZ+Ea7WiDDzLBs8atxVsNLBAowxVyIOdBmu4xi234tMVarHweg7JVlXjCMRrwhsDnv8KlLdZioEdDXdjX62XImwMTiCJtCRXnIYqBcw2sI3zh1nCr11PaYi1z0Ctb9qGhB8jRDUwg5Dhvwq4t1mLx5LPDGw7Crr8gOxJx2ILF1mURGMQRZMXlVw7POJwa07LZfgCanDIYlY5xkQAAAABJRU5ErkJggg==" InformativeScreenshot="746e6f5759f2800f785db1b5a1d477bc.jpg" Selector="&lt;html app='chrome.exe' htmlwindowname='DOWNLOAD' title='Download' /&gt;" Title="Download" Url="https://dart.fss.or.kr/pdf/download/main.do?rcp_no=20241114000212&amp;dcm_no=10180044" />
+                      <uix:TargetApp Area="-552, -168, 552, 585" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAHSSURBVDhPbZJPiE1hGMZvnF+4E2VhwcpMakomqRmhZJQyxmJWWEiJrY2NJOmZ2525lIkNNZrZGMm/rNBz5t7JlH+FbJQoysbCgtUs/Cv6Tt9cxzeeOp33Oz3P873ned9KJQHyZuR1yM+QjyNfQn6PvAO5J+W3gdyBvCaSDyI/QB6M5/PIJ5B/I99CXpnqg8FV5HvI25EPIW9B7kU+hbwtij8hTyEf+ccEeQh5APkMcl822lxafB/OlyGvQL6AfBh5D/IE8vdgVIizsdm1WaM1lzVar7KzM/3ZaGvx374KE5C7kMeQf8ZO5p+dlY5dl1dXhyZ6q3uvbKwOjncv7zm3pGxQmMidMY8DMdhgdjvUKfe/QF6PfB35OfJT5JfIb5FnU+4CUMtXIe+L4d5IfuFrym+DerOL+nRfnETYhTfIx5CPIj+JBl9SXQFqeUYtv4bcj/waeUPchyD6gDyJ7GCUagswnG+Ko9qN/Bn5MfJ+5G+l9ueQ66m2APLpSDqJPBPrm/HmcgZbU20la7QWIb+IhLtJcHeQ38V6PNUWYKQZRvYjkj7G1S3fGtb5PnI11Ragloe2y4KHpfpXnMiCZWuD+nQ38gjyo5h4eIfluRhGmvL/AJqcMhht8oRQAAAAAElFTkSuQmCC" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="c222e28aeb716eb8be92b04f9f359d70.jpg" Selector="&lt;html app='chrome.exe' htmlwindowname='DOWNLOAD' title='Download' /&gt;" Title="Download" Url="https://dart.fss.or.kr/pdf/download/main.do?rcp_no=20241114000212&amp;dcm_no=10180044" />
                     </uix:NApplicationCard.TargetApp>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -464,14 +465,14 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
                     </ActivityAction.Argument>
-                    <Sequence sap:VirtualizedContainerService.HintSize="416,467.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572,467.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_13">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[in_TransactionItem(&quot;제목&quot;).ToString +&quot;:&quot; +exception.Message]" />
-                      <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[String.Format(in_Config(&quot;메일내용&quot;).ToString , today.ToString(&quot;yyyyMmdd&quot;), in_TransactionItem(&quot;제목&quot;).ToString)]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="382,182.66666666666666" sap2010:WorkflowViewState.IdRef="SendOutlookMail_2" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="[String.Format(in_Config(&quot;메일제목&quot;).ToString , in_TransactionItem(&quot;제목&quot;).ToString)]" To="[in_Config(&quot;운영자메일&quot;).ToString]" UseISConnection="True">
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="538,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[in_TransactionItem(&quot;제목&quot;).ToString +&quot;:&quot; +exception.Message]" />
+                      <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[String.Format(in_Config(&quot;메일내용&quot;).ToString , today.ToString(&quot;yyyyMmdd&quot;), in_TransactionItem(&quot;제목&quot;).ToString)]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="538,182.66666666666666" sap2010:WorkflowViewState.IdRef="SendOutlookMail_2" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="[String.Format(in_Config(&quot;메일제목&quot;).ToString , in_TransactionItem(&quot;제목&quot;).ToString)]" To="[in_Config(&quot;운영자메일&quot;).ToString]" UseISConnection="True">
                         <ui:SendOutlookMail.ConnectionDetailsBackupSlot>
                           <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="{x:Null}">
                             <usau:BackupSlot.BackupValues>
@@ -483,11 +484,20 @@
                           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                         </ui:SendOutlookMail.Files>
                       </ui:SendOutlookMail>
-                      <Rethrow sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+                      <Rethrow sap:VirtualizedContainerService.HintSize="538,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
                     </Sequence>
                   </ActivityAction>
                 </Catch>
               </TryCatch.Catches>
+              <TryCatch.Finally>
+                <Sequence DisplayName="마지막" sap:VirtualizedContainerService.HintSize="572,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </TryCatch.Finally>
             </TryCatch>
           </Sequence>
         </ActivityAction>

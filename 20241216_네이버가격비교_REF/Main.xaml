@@ -146,7 +146,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">45,125</av:Point>
         <x:Double x:Key="StateContainerWidth">974</x:Double>
-        <x:Double x:Key="StateContainerHeight">722</x:Double>
+        <x:Double x:Key="StateContainerHeight">764</x:Double>
         <av:PointCollection x:Key="ConnectorLocation">95,150 125,150 125,173.73333333333335 164,173.73333333333335</av:PointCollection>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
@@ -266,14 +266,14 @@
         <Transition DisplayName="New Transaction" sap:VirtualizedContainerService.HintSize="430,796" sap2010:WorkflowViewState.IdRef="Transition_6">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:PointCollection x:Key="ConnectorLocation">659.6666666666666,325.6666666666667 659.6666666666666,355.6666666666667 660,355.6666666666667 660,385</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">659.6666666666666,325.6666666666667 659.6666666666666,355.6666666666667 670,355.6666666666667 670,385</av:PointCollection>
               <x:Int32 x:Key="SrcConnectionPointIndex">39</x:Int32>
               <x:Int32 x:Key="DestConnectionPointIndex">38</x:Int32>
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Transition.To>
-            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="1) 상품코드으로 조회후 서브 조건을 추가로 선택하여 검색&#xD;&#xA;2) 제목에서 제외할 대상 필터링 및 정렬&#xD;&#xA;3) 최저가 상품의 상세화면으로 이동하여 화면 스크린샷 진행&#xD;&#xA;4) 결과 이미지를 지정된 경로에 저장&#xD;&#xA;5) 매단계별 검색결과가 없는 경우 BusinessException 처리" DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="240,244.66666666666666" sap2010:WorkflowViewState.IdRef="State_3">
+            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="1) 상품코드으로 조회후 서브 조건을 추가로 선택하여 검색&#xD;&#xA;&#xA;2) 제목에서 제외할 대상 필터링 및 정렬&#xD;&#xA;&#xA;3) 최저가 상품의 상세화면으로 이동하여 화면 스크린샷 진행&#xD;&#xA;&#xA;4) 결과 이미지를 지정된 경로에 저장&#xD;&#xA;&#xA;5) 매단계별 상세화면에 상품 결과가 없는 경우 BinessException 처리하여 다음건이 정상적으로 처리되도록 함" DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="240,344.6666666666667" sap2010:WorkflowViewState.IdRef="State_3">
               <State.Entry>
                 <TryCatch DisplayName="Try to process transaction" sap:VirtualizedContainerService.HintSize="470,2458" sap2010:WorkflowViewState.IdRef="TryCatch_9">
                   <sap:WorkflowViewStateService.ViewState>
@@ -508,8 +508,8 @@
               </State.Entry>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">540,385</av:Point>
-                  <av:Size x:Key="ShapeSize">240,244.66666666666666</av:Size>
+                  <av:Point x:Key="ShapeLocation">550,385</av:Point>
+                  <av:Size x:Key="ShapeSize">240,344.6666666666667</av:Size>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Double x:Key="StateContainerWidth">227.92953933936704</x:Double>
                   <x:Double x:Key="StateContainerHeight">34.79781563235815</x:Double>
@@ -520,7 +520,7 @@
                 <Transition DisplayName="System Exception" sap:VirtualizedContainerService.HintSize="451.333333333333,521.333333333333" sap2010:WorkflowViewState.IdRef="Transition_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">612,629.6666666666666 612,659.6666666666666 256.8,659.6666666666666 256.8,287.33333333333337</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">622,729.6666666666667 622,759.6666666666667 256.8,759.6666666666667 256.8,287.33333333333337</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">23</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">31</x:Int32>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -528,7 +528,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <Transition.Condition>[SystemException IsNot Nothing]</Transition.Condition>
                   <Transition.To>
-                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="1) 결과 폴더 존재하면 삭제후 생성하고 없으면 생성&#xD;&#xA;&#xD;&#xA;C:\Users\&lt;사용자명&gt;\Documents\ 경로에 Output 폴더를 생성 &#xA;" DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="232,189.33333333333334" sap2010:WorkflowViewState.IdRef="State_2">
+                    <State x:Name="__ReferenceID3" sap2010:Annotation.AnnotationText="1) 결과 폴더 존재하면 삭제후 생성하고 없으면 생성&#xA;&#xA;C:\Users\&lt;사용자명&gt;\Documents\ 경로에 Output 폴더를 생성 &#xA;" DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="232,189.33333333333334" sap2010:WorkflowViewState.IdRef="State_2">
                       <State.Entry>
                         <TryCatch DisplayName="Try initializing settings and applications" sap:VirtualizedContainerService.HintSize="522.6666666666666,2560.6666666666665" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                           <sap:WorkflowViewStateService.ViewState>
@@ -738,14 +738,14 @@
                         <Transition DisplayName="System Exception (failed initialization)" sap:VirtualizedContainerService.HintSize="448.8,802.4" sap2010:WorkflowViewState.IdRef="Transition_3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:PointCollection x:Key="ConnectorLocation">396,173.73333333333335 426,173.73333333333335 426,118.2 560,118.2</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">396,173.73333333333335 426,173.73333333333335 426,133.2 560,133.2</av:PointCollection>
                               <x:Int32 x:Key="SrcConnectionPointIndex">28</x:Int32>
                               <x:Int32 x:Key="DestConnectionPointIndex">33</x:Int32>
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <Transition.To>
-                            <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="1) 검색한 결과를 엑셀에서 쓰고 결과 폴더를 Zip으로 압축하기&#xD;&#xA;2) 운영자에게 Zip 파일을 첨부하여 이메일 전송" DisplayName="End Process" sap:VirtualizedContainerService.HintSize="200,156" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
+                            <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="1) 검색한 결과를 엑셀에서 쓰고 결과 폴더를 Zip으로 압축하기&#xD;&#xA;&#xA;2) 운영자에게 Zip 파일을 첨부하여 이메일 전송&#xD;&#xA;" DisplayName="End Process" sap:VirtualizedContainerService.HintSize="200,189.33333333333334" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
                               <State.Entry>
                                 <Sequence sap:VirtualizedContainerService.HintSize="556.6666666666666,1392.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -880,7 +880,7 @@
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">560,48</av:Point>
-                                  <av:Size x:Key="ShapeSize">200,156</av:Size>
+                                  <av:Size x:Key="ShapeSize">200,189.33333333333334</av:Size>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   <x:Double x:Key="StateContainerWidth">188.00041159900604</x:Double>
                                   <x:Double x:Key="StateContainerHeight">29</x:Double>
@@ -918,7 +918,7 @@
                 <Transition sap2010:Annotation.AnnotationText="Business Rule Exception" DisplayName="Business Exception" sap:VirtualizedContainerService.HintSize="448.8,537.6" sap2010:WorkflowViewState.IdRef="Transition_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">540,495.1 510,495.1 510,298 545,298</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">550,540.1 520,540.1 520,298 545,298</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">33</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">57</x:Int32>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -933,7 +933,7 @@
                 <Transition sap2010:Annotation.AnnotationText="There is no need for any action in case of successful transaction.&#xA;The process should simply go to next transaction." DisplayName="Success" sap:VirtualizedContainerService.HintSize="452,553.6" sap2010:WorkflowViewState.IdRef="Transition_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">780,482.8666666666667 810,482.8666666666667 810,292.4666666666667 774.3333333333334,292.4666666666667</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">790,522.8666666666667 820,522.8666666666667 820,292.4666666666667 774.3333333333334,292.4666666666667</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">28</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">52</x:Int32>
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -956,7 +956,7 @@
         <Transition sap2010:Annotation.AnnotationText="This is a simple mecanism to stop the process.&#xA;In reallife scenario you can stop the process when there is no more data to process or on a schedule." DisplayName="No Data" sap:VirtualizedContainerService.HintSize="429.6,969.6" sap2010:WorkflowViewState.IdRef="Transition_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:PointCollection x:Key="ConnectorLocation">659.6666666666666,215 660,215 660,204</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">659.6666666666666,215 659.6666666666666,237.33333333333334 660,237.33333333333334</av:PointCollection>
               <x:Int32 x:Key="SrcConnectionPointIndex">38</x:Int32>
               <x:Int32 x:Key="DestConnectionPointIndex">39</x:Int32>
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>

@@ -116,11 +116,11 @@
       "Path": "Framework/Process.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strGetFileName&Sequence_1",
-        "idx&Sequence_1",
-        "nDownLoadNum&Sequence_1",
-        "dtFileNames&Sequence_1",
-        "strExceptionMessgae&Sequence_1"
+        "dtFileNames&Sequence_14",
+        "strExceptionMessgae&Sequence_14",
+        "nDownLoadNum&Sequence_14",
+        "idx&Sequence_14",
+        "strGetFileName&Sequence_14"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_TransactionItem",

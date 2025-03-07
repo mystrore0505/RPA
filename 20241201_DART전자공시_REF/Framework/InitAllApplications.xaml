@@ -118,7 +118,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="975.9999999999999,4652.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="1272,4540.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Browser" Name="wBrowser" />
       <Variable x:TypeArguments="x:String" Name="strStartDay" />
@@ -133,9 +133,9 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message (Opening applications)" sap:VirtualizedContainerService.HintSize="654,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
-    <ui:Comment sap:VirtualizedContainerService.HintSize="654,127.33333333333333" sap2010:WorkflowViewState.IdRef="Comment_1" Text="1. DART 전자공시에 접속후 조건 입력후 검색한 결과를 취합&#xD;&#xA;&#xD;&#xA;2. 페이징처리를 통해 데이타 취합" />
-    <ui:MultipleAssign sap2010:Annotation.AnnotationText="" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="654,149.33333333333334" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:LogMessage DisplayName="Log message (Opening applications)" sap:VirtualizedContainerService.HintSize="588,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="588,127.33333333333333" sap2010:WorkflowViewState.IdRef="Comment_1" Text="1. DART 전자공시에 접속후 조건 입력후 검색한 결과를 취합&#xA;&#xA;2. 페이징처리를 통해 데이타 취합" />
+    <ui:MultipleAssign sap2010:Annotation.AnnotationText="" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="588,149.33333333333334" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -154,20 +154,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" sap2010:Annotation.AnnotationText="" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="654,391.3333333333333" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[wBrowser]" Url="[in_Config(&quot;DartURL&quot;).ToString]">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" sap2010:Annotation.AnnotationText="" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="588,391.3333333333333" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[wBrowser]" Url="[in_Config(&quot;DartURL&quot;).ToString]">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="416,232" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,232" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="382,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="382,114.66666666666667" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="416,114.66666666666667" sap2010:WorkflowViewState.IdRef="Delay_1" />
           </Sequence>
         </ActivityAction>
       </ui:OpenBrowser.Body>
@@ -177,20 +177,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
-    <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[wBrowser]" BrowserType="Chrome" DisplayName="Attach Browser" sap:VirtualizedContainerService.HintSize="654,3754.6666666666665" sap2010:WorkflowViewState.IdRef="BrowserScope_1">
+    <ui:BrowserScope SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[wBrowser]" BrowserType="Chrome" DisplayName="Attach Browser" sap:VirtualizedContainerService.HintSize="588,3642.6666666666665" sap2010:WorkflowViewState.IdRef="BrowserScope_1">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="620,3622.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="554,3510.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="586,124" sap2010:WorkflowViewState.IdRef="Delay_2" />
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_공시서류검색" sap:VirtualizedContainerService.HintSize="586,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="520,124" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_공시서류검색" sap:VirtualizedContainerService.HintSize="520,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -212,7 +212,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into_아가방" sap:VirtualizedContainerService.HintSize="586,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[in_Config(&quot;검색어&quot;).ToString]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into_아가방" sap:VirtualizedContainerService.HintSize="520,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[in_Config(&quot;검색어&quot;).ToString]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e6570b88-3704-4510-8411-bdd3d343a0c0" InformativeScreenshot="7fe98159efe68083c212297f29ee8bdc" Selector="&lt;html app='chrome.exe' title='전자공시시스템| 공시서류검색 | 공시통합검색' /&gt;&lt;webctrl id='textCrpNm' tag='INPUT' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -224,7 +224,7 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <Assign sap:VirtualizedContainerService.HintSize="586,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign sap:VirtualizedContainerService.HintSize="520,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[strStartDay]</OutArgument>
               </Assign.To>
@@ -232,7 +232,7 @@
                 <InArgument x:TypeArguments="x:String">[Cdate(in_Config("시작일자")).ToString("yyyyMMdd")]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into_시작일자" EmptyField="True" sap:VirtualizedContainerService.HintSize="586,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[strStartDay]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into_시작일자" EmptyField="True" sap:VirtualizedContainerService.HintSize="520,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[strStartDay]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="24cf5091-5a17-40e5-b349-c2b4df8694cb" InformativeScreenshot="d9f8bf9b1c960f29ae3a69a1d5494990" Selector="&lt;html app='chrome.exe' title='전자공시시스템| 공시서류검색 | 공시통합검색' /&gt;&lt;webctrl id='startDate' tag='INPUT' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -244,7 +244,7 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into_종료일자" EmptyField="True" sap:VirtualizedContainerService.HintSize="586,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[Cdate(in_Config(&quot;종료일자&quot;)).ToString(&quot;yyyyMMdd&quot;)]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into_종료일자" EmptyField="True" sap:VirtualizedContainerService.HintSize="520,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[Cdate(in_Config(&quot;종료일자&quot;)).ToString(&quot;yyyyMMdd&quot;)]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="24cf5091-5a17-40e5-b349-c2b4df8694cb" InformativeScreenshot="24bedec0f03e34a2d1dbcb92f5caa11c" Selector="&lt;html app='chrome.exe' title='전자공시시스템| 공시서류검색 | 공시통합검색' /&gt;&lt;webctrl id='endDate' tag='INPUT' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -256,7 +256,7 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_검색" sap:VirtualizedContainerService.HintSize="586,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_검색" sap:VirtualizedContainerService.HintSize="520,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -278,27 +278,27 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="True" DisplayName="While_검색 결과 취합" sap:VirtualizedContainerService.HintSize="586,2307.3333333333335" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="True" DisplayName="While_검색 결과 취합" sap:VirtualizedContainerService.HintSize="520,2195.3333333333335" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="552,2159.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="518,2063.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 전자공시시스템| 공시서류검색 | 공시통합검색" sap:VirtualizedContainerService.HintSize="518,499.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="459d3234-421b-4918-999d-815a1de13c28" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome_전자공시시스템" sap:VirtualizedContainerService.HintSize="484,499.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="459d3234-421b-4918-999d-815a1de13c28" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,248" sap2010:WorkflowViewState.IdRef="Sequence_12">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NExtractData ContinueOnError="True" DataTable="[io_dt_TransactionData]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='제목'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='제목URL'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="382,185.33333333333334" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="459d3234-421b-4918-999d-815a1de13c28" Version="V4">
+                          <uix:NExtractData ContinueOnError="True" DataTable="[io_dt_TransactionData]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='제목'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='제목URL'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="416,185.33333333333334" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="459d3234-421b-4918-999d-815a1de13c28" Version="V4">
                             <uix:NExtractData.Target>
                               <uix:TargetAnchorable BrowserURL="https://dart.fss.or.kr/dsab007/main.do?option=corp" DesignTimeRectangle="640, 316, 920, 617" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='tbody' tag='TBODY' /&gt;" Guid="0a4766a6-518b-454c-bc29-708529dd3bb6" InformativeScreenshot="e1b16c4a6235128fb707ced06cd78461.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='전자공시시스템| 공시서류검색 | 공시통합검색' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NExtractData.Target>
@@ -307,7 +307,7 @@
                       </ActivityAction>
                     </uix:NApplicationCard.Body>
                     <uix:NApplicationCard.TargetApp>
-                      <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGpSURBVDhPfdJPKERRFMfxiffCiLKwYIWUkklqCCWU8m9hhYWU2NrYSJLQGJSJDUVskPzLCmGIYihko0RRNhYWrCz8K75nOvPnmTj1ad5793fue3Pvtf0us2+7AJk4RQcmcIdSODQWWQzGI1XDTdhCjd6PohPfWEGStoWKh3PYQAmaUQgnulEMaX7EPFoRmoSbOlShF/mG2xvrf96/E8d9IsbQgmrM4B3z/mbDc5hmDO294tIY3i8z3HvR/gEtJjEJZ8CDT8iXBJTb4ismU+x1M0577XSuvWYqK8ExEqO9wSKYDlmPRsjCymSrcq2R/4tgNhZxhhNc4AaHGvm7zIGdZIL1kMVdQvhfeNFYZJkub4bp2s0nJDshZ+Ea7WiDDzLBs8atxVsNLBAowxVyIOdBmu4xi234tMVarHweg7JVlXjCMRrwhsDnv8KlLdZioEdDXdjX62XImwMTiCJtCRXnIYqBcw2sI3zh1nCr11PaYi1z0Ctb9qGhB8jRDUwg5Dhvwq4t1mLx5LPDGw7Crr8gOxJx2ILF1mURGMQRZMXlVw7POJwa07LZfgCanDIYlY5xkQAAAABJRU5ErkJggg==" InformativeScreenshot="1eeccd94285ab2f180a6c1736b65ae63.jpg" Selector="&lt;html app='chrome.exe' title='전자공시시스템| 공시서류검색 | 공시통합검색' /&gt;" Title="전자공시시스템| 공시서류검색 | 공시통합검색" Url="https://dart.fss.or.kr/dsab007/main.do?option=corp" />
+                      <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGpSURBVDhPfdJPKERRFMfxiffCiLKwYIWUkklqCCWU8m9hhYWU2NrYSJLQGJSJDUVskPzLCmGIYihko0RRNhYWrCz8K75nOvPnmTj1ad5793fue3Pvtf0us2+7AJk4RQcmcIdSODQWWQzGI1XDTdhCjd6PohPfWEGStoWKh3PYQAmaUQgnulEMaX7EPFoRmoSbOlShF/mG2xvrf96/E8d9IsbQgmrM4B3z/mbDc5hmDO294tIY3i8z3HvR/gEtJjEJZ8CDT8iXBJTb4ismU+x1M0577XSuvWYqK8ExEqO9wSKYDlmPRsjCymSrcq2R/4tgNhZxhhNc4AaHGvm7zIGdZIL1kMVdQvhfeNFYZJkub4bp2s0nJDshZ+Ea7WiDDzLBs8atxVsNLBAowxVyIOdBmu4xi234tMVarHweg7JVlXjCMRrwhsDnv8KlLdZioEdDXdjX62XImwMTiCJtCRXnIYqBcw2sI3zh1nCr11PaYi1z0Ctb9qGhB8jRDUwg5Dhvwq4t1mLx5LPDGw7Crr8gOxJx2ILF1mURGMQRZMXlVw7POJwa07LZfgCanDIYlY5xkQAAAABJRU5ErkJggg==" InformativeScreenshot="1eeccd94285ab2f180a6c1736b65ae63.jpg" Selector="&lt;html app='chrome.exe' title='전자공시시스템| 공시서류검색 | 공시통합검색' /&gt;" Title="전자공시시스템| 공시서류검색 | 공시통합검색" Url="[in_Config(&quot;DartURL&quot;).ToString]" />
                     </uix:NApplicationCard.TargetApp>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -316,7 +316,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NApplicationCard>
-                  <Assign sap:VirtualizedContainerService.HintSize="518,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign sap:VirtualizedContainerService.HintSize="484,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[nPage]</OutArgument>
                     </Assign.To>
@@ -324,7 +324,7 @@
                       <InArgument x:TypeArguments="x:Int32">[nPage+1]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <If Condition="[nPage mod 10 =1]" sap:VirtualizedContainerService.HintSize="518,1482.6666666666667" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If Condition="[nPage mod 10 =1]" sap:VirtualizedContainerService.HintSize="484,1386.6666666666667" sap2010:WorkflowViewState.IdRef="If_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -332,13 +332,13 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,660" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="452,628" sap2010:WorkflowViewState.IdRef="Sequence_14">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:UiElementExists DisplayName="Element Exists_다음버튼" Exists="[bNextButton]" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                        <ui:UiElementExists DisplayName="Element Exists_다음버튼" Exists="[bNextButton]" sap:VirtualizedContainerService.HintSize="418,139.33333333333334" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                           <ui:UiElementExists.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aea1eae9-902e-4bfd-b550-3b6a627e87b0" InformativeScreenshot="a119922597b69980916b68a292fc6c2e" Selector="&lt;html app='chrome.exe' title='전자공시시스템| 공시서류검색 | 공시통합검색' /&gt;&lt;webctrl class='next' parentid='psWrap' tag='A' /&gt;">
                               <ui:Target.TimeoutMS>
@@ -350,7 +350,7 @@
                             </ui:Target>
                           </ui:UiElementExists.Target>
                         </ui:UiElementExists>
-                        <If Condition="[bNextButton]" sap:VirtualizedContainerService.HintSize="450,460.6666666666667" sap2010:WorkflowViewState.IdRef="If_2">
+                        <If Condition="[bNextButton]" sap:VirtualizedContainerService.HintSize="418,428.6666666666667" sap2010:WorkflowViewState.IdRef="If_2">
                           <If.Then>
                             <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="Sequence_16">
                               <sap:WorkflowViewStateService.ViewState>
@@ -396,13 +396,13 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484,660" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="452,628" sap2010:WorkflowViewState.IdRef="Sequence_15">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:UiElementExists DisplayName="Element Exists_숫자버튼" Exists="[nPageButton]" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                        <ui:UiElementExists DisplayName="Element Exists_숫자버튼" Exists="[nPageButton]" sap:VirtualizedContainerService.HintSize="418,139.33333333333334" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                           <ui:UiElementExists.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1e56ee63-e7ac-41ed-8d7f-9d0267215fe1" InformativeScreenshot="b7242827870aef4ae9aed231d27ada53" Selector="[string.Format(&quot;&lt;html app='chrome.exe' title='전자공시시스템| 공시서류검색 | 공시통합검색' /&gt;&lt;webctrl aaname='{0}' parentid='psWrap' tag='A' /&gt;&quot;, nPage)]">
                               <ui:Target.TimeoutMS>
@@ -414,7 +414,7 @@
                             </ui:Target>
                           </ui:UiElementExists.Target>
                         </ui:UiElementExists>
-                        <If Condition="[nPageButton]" sap:VirtualizedContainerService.HintSize="450,460.6666666666667" sap2010:WorkflowViewState.IdRef="If_3">
+                        <If Condition="[nPageButton]" sap:VirtualizedContainerService.HintSize="418,428.6666666666667" sap2010:WorkflowViewState.IdRef="If_3">
                           <If.Then>
                             <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="Sequence_18">
                               <sap:WorkflowViewStateService.ViewState>
@@ -469,7 +469,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InterruptibleWhile>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="586,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;io_dt_TransactionData:&quot; +io_dt_TransactionData.RowCount.ToString]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;io_dt_TransactionData:&quot; +io_dt_TransactionData.RowCount.ToString]" />
           </Sequence>
         </ActivityAction>
       </ui:BrowserScope.Body>
